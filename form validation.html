@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="refresh" content="300" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>login Page</title>
+<style type="text/css">
+body{
+	background-image:url(../IMAGES/k3.jpg);
+   }
+div {
+	margin-top:160px;
+	margin-left:290px;
+}
+
+</style>
+</head>
+
+<body>
+<marquee><h1 style="color:
+#F00">Welcome To Login</h1></marquee>
+
+<script>
+
+var nam="university";
+var pasw=1234;
+function myfun()  
+             {
+				 var us=document.getElementById("nn").value;
+				 var ps=document.getElementById("pp").value;
+			//document.getElementById("output").innerHTML=us+ps;
+			if(us==nam & ps==pasw)
+			{
+				
+				alert("Sucessfull Login");
+				
+				}else
+				if(us!=nam & ps==pasw)
+			{
+				
+				alert("You Entered Wrong Username");
+				
+				}else
+				if(us==nam & ps!=pasw)
+			{
+				
+				alert("You Entered Wrong Password");
+				
+				}else
+				if(us!=nam & ps!=pasw)
+			{
+
+				alert("You Enter Wrong Username And Password");
+					
+			}
+			 }
+confirm=function(){
+	document.write("<marquee><h1>Welcome to The Motorway</h1></marquee>");
+document.write("<a href='motorway-in-or-out.html'><button>CONTINUE</button></a>");	
+
+}
+
+</script>
+<div>
+<p id="output"></p>
+Username :<input type="text" id="nn" placeholder="Enter Username" required="required" />
+<br />
+<br />
+Password :<input type="password" id="pp" placeholder="Enter Password" required="required" />
+<br />
+<br />
+<button onclick="myfun()">LOGIN</button>
+</div>
+</body>
+</html>
